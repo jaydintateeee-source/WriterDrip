@@ -1,197 +1,26 @@
-# WriterDrip
+The Equation of Excellence
 
-Free Dripwriter alternative for Google Docs.
+In the rapidly evolving fields of Science, Technology, Engineering, and Mathematics (STEM), innovation is rarely the product of a lone genius. Instead, breakthroughs happen when exceptional minds collide. The phrase "Top Talent Makes the Best Team" is often accepted as an absolute truth in competitive industries. However, to truly drive meaningful progress and pioneering advancements, the definition of "top talent" must be re-examined.
 
-WriterDrip is a free and open-source Chrome extension for paced typing in Google Docs. If you searched GitHub for `Dripwriter`, `Dripwriter alternative`, or `free Dripwriter alternative`, WriterDrip is an independent open-source option built around the part people actually care about most: a draft-aware correction engine that can introduce and fix typos, spacing slips, punctuation mistakes, repeated words, and delayed repairs while still resolving back to the original final draft.
+True excellence in a STEM organization does not merely come from assembling individuals with the highest technical credentials. Rather, the best teams are forged when diverse perspectives, organizational leadership, and a shared passion for progress intersect to break down historical barriers.
 
-Local-first, always free, and built for the Google Doc already open in your browser.
+Dismantling the Historical Blueprint
 
-Current version: `1.0.3`. See [`CHANGELOG.md`](CHANGELOG.md) for update notes.
+To understand the power of a modern, talented team, one must look at where STEM began. Historically, these fields were strictly viewed as a domain for men, characterized by homogenous environments that locked out women and non-traditional thinkers. This systemic exclusion meant that for decades, STEM teams were operating with a massive blind spot, missing out on half of the world's intellectual potential.
+As a woman who is not pursuing a traditional STEM career path but is deeply invested as a leader within a STEM organization, I see firsthand how vital it is to challenge this legacy. My presence—and the presence of other women in this space—is a direct rejection of the old narrative. Top talent is no longer defined by who used to fit the mold, but by who has the courage to reshape it.
 
-<p align="center">
-  <img src="docs/assets/writerdrip-overview-card.png" alt="WriterDrip popup overview" width="500">
-</p>
+The Value of Non-Traditional Talent
+An exceptional team requires a diverse ecosystem of skills. While technical experts are essential, a premier STEM organization also relies heavily on leaders, communicators, and strategists who can bridge the gap between complex science and real-world impact.
+ Diverse Problem-Solving: Coming from a non-STEM background allows me to approach organizational challenges with a fresh lens. When teams are composed of both technical and non-technical minds, they communicate better, organize more effectively, and avoid the pitfalls of groupthink.
+ 
+ Cultural Resilience: Navigating and leading within an industry that historically excluded women requires resilience and adaptability. Bringing that grit into an organization strengthens the collective group, transforming it into a space that values progress over precedent.
+The Power of a Shared Vision
+An assembly of brilliant minds can easily fail if individual egos or outdated biases override collective goals. Therefore, top talent only creates the best team when it is paired with a culture of inclusion and collaboration.
 
-## Get Started
+Forward-thinking organizations, much like Hyundai, exemplify how assembling a multifaceted team drives global progress. True innovation doesn't just happen in a lab; it happens when visionary leaders, advocates, and creators align to push boundaries.
 
-1. Download or clone this repository.
-2. Open `chrome://extensions`, enable `Developer mode`, and click `Load unpacked`.
-3. Select the WriterDrip folder that contains `manifest.json`.
-4. Open a Google Doc, click inside the document body, open WriterDrip, paste your draft, choose a duration, and click `Start drip`.
+By championing diversity and defying the historical stereotype of who belongs in STEM, a team becomes greater than the sum of its parts. Top talent means knowing how to leverage every unique voice to build a cohesive, forward-thinking environment.
 
-## Looking For Dripwriter?
+Driving Future Progress
 
-If you landed here while searching GitHub for `Dripwriter`, WriterDrip is a free open-source Dripwriter alternative for Google Docs. It gives you a similar paced typing workflow, but it is local-first, GitHub-hosted, and designed around draft-aware corrections, pause or resume controls, and same-Doc recovery.
-
-## Trust Model
-
-WriterDrip competes on transparency instead of cloud lock-in:
-
-- No Google OAuth
-- No server-side typing jobs
-- No text upload
-- Open-source correction and pacing engine
-- Runs locally in your browser
-- Recovery-first checks before start, resume, and completion
-- Redacted debug reports that exclude draft text
-
-### First Run Notes
-
-- WriterDrip only works on editable Google Docs pages.
-- Leave correction intensity on `Suggested` if you want the default behavior.
-- You can switch to other tabs while the original Google Doc tab keeps running.
-- You can pause a run and resume it later, including the next day, as long as WriterDrip can recover the same Google Doc.
-- Keep your browser open and keep the original Google Doc tab open. WriterDrip can ask Chrome to keep the system awake during active runs, but you can turn this off in the popup if you prefer normal battery or sleep behavior.
-- WriterDrip cannot run if the browser is closed, the computer shuts down, or the lid forces sleep.
-- If the Doc tab reloads or closes unexpectedly, reopen the same Google Doc and use `Resume` if WriterDrip offers it.
-- Reload the extension from `chrome://extensions` after pulling updates from GitHub.
-
-## Updates And Versions
-
-WriterDrip uses semantic versions like `1.0.3` so testers can clearly report which build they are using.
-
-- Check the popup footer to see your installed version.
-- Check `CHANGELOG.md` to see what changed in each release.
-- After pulling or downloading a newer version, reload WriterDrip from `chrome://extensions`.
-- If a bug report does not include a version, ask for the popup footer version first.
-
-## Why People Use It
-
-- Types into the Google Doc already open in your browser instead of dumping the whole draft at once
-- Uses a correction engine with typo variety, spacing slips, punctuation substitutions, repeated words, and delayed repairs
-- Shows a correction preview before start so you can see what `Suggested`, `Low`, `Medium`, and `High` mean for the current draft
-- Lets you keep `Suggested` on for draft-aware correction behavior or switch to `Low`, `Medium`, or `High`
-- Supports pause, resume, stop, and same-Doc recovery when a run gets interrupted
-- Uses optional Chrome keep-awake and tab discard protection during active runs so local drips are less likely to stall while you use other tabs
-- Shows a run summary after completion with correction counts, delayed repairs, pause counts, interruptions, and final completion-check status
-
-## Feature Tour
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/assets/writerdrip-correction-card.png" alt="WriterDrip correction intensity controls" width="100%">
-      <br>
-      <strong>Lead with the correction engine</strong>
-      <br>
-      WriterDrip can vary typo depth, spacing slips, punctuation mistakes, repeated words, and repair behavior while keeping the final text exact.
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/assets/writerdrip-duration-card.png" alt="WriterDrip duration controls" width="100%">
-      <br>
-      <strong>Shape the timing around the draft</strong>
-      <br>
-      Pick a custom duration, use the quick presets, and let WriterDrip scale from the draft minimum up to longer sessions.
-    </td>
-  </tr>
-</table>
-
-## What You Get
-
-- Works on a Google Doc you already opened and selected in your browser
-- Lets you choose a custom duration from the draft-sized minimum up to 1 week, or use built-in 1 hour, 1 day, and 1 week presets
-- Adds layered pacing with burst pauses, sentence or paragraph rests, and a richer correction engine instead of just clean straight-through typing
-- Includes `Suggested`, `Low`, `Medium`, and `High` correction intensity modes, with `Suggested` adapting to the current draft automatically
-- Can introduce and repair transpositions, missed letters, nearby-key slips, spacing mistakes, punctuation substitutions, repeated words, and delayed corrections
-- Runs a preflight start check before typing so the current Doc, editor surface, and typing context are ready
-- Supports pause, resume, and stop controls
-- Keeps paused runs recoverable so you can reopen the same Google Doc later and continue from there
-- Shows a recovery wizard with confidence states like `Ready`, `Needs click in Doc`, `Doc changed`, or `Restart recommended`
-- Records a run summary and completion check after each run so you can see what happened without storing the draft body
-- Provides a `Copy debug report` action for failures with browser, extension, session, and Doc status metadata only
-- Binds each drip to the specific Google Doc tab where it started
-- Keeps active session state outside the popup so closing the popup does not immediately stop the run
-
-## Current Limits
-
-- No Google account connection or Google Drive / Docs API integration
-- No remote server runs or cloud processing
-- No typing while the browser is closed, the computer is asleep, or the target Doc is unavailable; recovery still requires reopening the same Google Doc
-- No control over how Google Docs groups version history entries
-- Strongest with the Google Doc the user already opened in the browser
-- Google Docs can change editor behavior without warning
-- If the target tab moves away from the original document or loses the editor surface, WriterDrip stops and asks for attention
-
-## Troubleshooting
-
-### Start button is disabled
-
-- Make sure you are on `docs.google.com` and the page is a real editable document.
-- Click inside the document body, then reopen the popup.
-
-### WriterDrip cannot attach to the editor
-
-- Wait for Google Docs to finish loading, then click once inside the document body again.
-- If needed, refresh the Google Doc tab and reopen the popup.
-
-### The original Doc tab reloaded or closed
-
-- Reopen the same Google Doc.
-- Wait for the page to finish loading and click once inside the document body.
-- Reopen WriterDrip and press `Resume` if it is offered.
-
-### Google Docs changes text during a run
-
-- In Google Docs, open `Tools > Preferences`.
-- Turn off Smart Compose, spelling or grammar suggestions, and substitutions that keep rewriting text.
-
-### It feels too clean or too sloppy
-
-- Leave correction intensity on `Suggested` first, because it adapts to draft length, structure, and pacing.
-- Use `Low` for short or technical drafts, `Medium` for normal prose, and `High` when you want the correction engine to stay more active.
-
-## Privacy
-
-- WriterDrip does not send text to any server.
-- WriterDrip stores drafts, durations, and active session state locally with `chrome.storage.local`.
-- The keep-awake preference is stored locally and defaults to on. Turn off `Keep computer awake` in the popup if you do not want WriterDrip to request Chrome system keep-awake during active runs.
-- The extension uses a scoped Google Docs document permission, `https://docs.google.com/document/*`, so pause, resume, and recovery can reattach after reloads without broad all-site access.
-- Popup draft fields are cleared when their related tab closes; active run recovery state is kept only when WriterDrip needs it to resume or explain a run.
-- This repository is an independent open-source project and is not affiliated with other typing products or services.
-
-For the full policy text, see `PRIVACY.md`.
-
-## Credit
-
-If you reuse substantial parts of WriterDrip, please keep visible credit to the WriterDrip repository and preserve the license and notice files.
-
-- Repository: `https://github.com/Highdrys01/WriterDrip`
-- License: `MIT`
-- Notice: `NOTICE.md`
-
-## Google Docs Version History Notes
-
-WriterDrip types into the live Google Docs editor, but Google controls how version history is displayed and grouped.
-
-- Google Docs lets editors open version history from `File > Version history > See version history` or from the `Last edit` indicator.
-- Google may group nearby edits together, and its help docs note that revisions can occasionally be merged to save storage space.
-- Google Docs also supports named versions, but those are created from the Google Docs UI by the user, not by WriterDrip.
-- WriterDrip does not create, rename, restore, or copy versions on your behalf.
-- Because version boundaries are owned by Google Docs, visible history entries may not line up one-to-one with every typing burst.
-
-## For Contributors
-
-- `manifest.json`: extension manifest and permissions
-- `shared.js`: shared draft sanitizing, duration, and correction heuristics used by the popup, background worker, and runner
-- `popup.html`: popup UI
-- `popup.js`: popup behavior and per-tab draft persistence
-- `background.js`: run management, recovery, and session state
-- `content.js`: Google Docs/editor targeting, timing model, and simulated input
-- `docs/assets`: shared screenshots for the landing page, README, and social preview
-- `scripts/validate.mjs`: repo-native validation harness for runtime smoke checks and planner replay tests
-- `PRIVACY.md`: privacy disclosures for users
-
-Run `npm run validate` before pushing meaningful changes. The validation suite checks:
-
-- manifest and popup wiring
-- shared popup/background/content runtime loading
-- planner replay so the final output still resolves back to the original draft
-- TitleCase guards on larger word-level correction paths
-
-## Community
-
-Issues and pull requests are welcome. See `CONTRIBUTING.md` for the lightweight contribution guide, and avoid posting private document contents in public reports.
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE`.
+Ultimately, top talent does make the best team—but only when that talent is defined by its depth, its diversity, and its dedication to breaking boundaries. By bringing my unique perspective and leadership to a STEM organization, I aim to contribute to the high-caliber, inclusive teams that will design a smarter, more equitable tomorrow.
